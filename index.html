@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+        /* Style for the header with the search bar */
+        .wiki-search-header {
+            background-color: #f2f2f2; /* Light gray background */
+            padding: 20px;
+            text-align: center;
+            border-radius: 24px; /* Rounded edges */
+        }
+
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 24px; /* Rounded edges */
+            width: 300px;
+            background-color: #fff; /* White background */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for input */
+        }
+
+        .search-input::placeholder {
+            color: #777; /* Placeholder text color */
+        }
+
+        /* Style for the content section (You can leave your existing content as-is) */
+        .content {
+            background-image: url('background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 500px; /* Adjust the height as needed */
+            text-align: center;
+            padding-top: 100px; /* Adjust this for vertical alignment */
+        }
+
+        .content h4 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the footer (You can leave your existing footer as-is) */
+        .footer {
+            text-align: center;
+            background-color: #FFFFFF;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="wiki-search-header text-center">
+            <img class="wiki-logo" src="wiki-logo-img.png" />
+            <br />
+            <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" />
+        </div>
+
+        <div class="d-none" id="spinner">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+          <h4>Welcome to Wiki: Your Gateway to In-Depth Information</h4>
+          <p>At Wiki, we harness the power of the Wikipedia API to provide you with precise and comprehensive search results.</p>
+    
+          <h4>Search with Precision:</h4>
+          <p>Utilize our robust search to access accurate information with ease.</p>
+    
+          <h4>Reliable Source:</h4>
+          <p>Count on Wikipedia's trusted content for your knowledge needs.</p>
+    
+          <h4>User-Friendly:</h4>
+          <p>Enjoy an intuitive and efficient browsing experience.</p>
+    
+          <h4>Privacy & Security:</h4>
+          <p>Rest assured, your data privacy is our priority.</p>
+    
+          <h4>Constant Updates:</h4>
+          <p>Access real-time knowledge from the evolving Wikipedia database.</p>
+    
+          <h4>Credits to Wikipedia:</h4>
+          <p>We appreciate the Wikipedia community for making this service possible.</p>
+    
+          <p>Thank you for choosing Wiki as your knowledge companion.</p>
+       <div class="footer">
+      <!--  <p>All rights reserved 2023<br>
+        <p>Designed & developed by Arun</p> -->
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the footer */
+        footer {
+            text-align: center; /* Center-align the content */
+            background-color: #fff; /* Change the background color to white */
+            color: #333; /* Text color, you can adjust this color as needed */
+            padding: 10px 0; /* Add some padding for spacing */
+        }
+
+        /* Style for the copyright text */
+        footer p {
+            margin: 0; /* Remove default margin */
+            font-size: 14px; /* Adjust font size */
+        }
+
+        /* Style for the copyright symbol */
+        footer p::before {
+            content: "\00a9"; /* Unicode copyright symbol */
+            margin-right: 5px; /* Add some spacing between symbol and text */
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <p>All Rights Reserved 2023 <br>  Designed and Developed by Arun</p>
+    </footer>
+</body>
+</html>
